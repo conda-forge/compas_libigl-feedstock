@@ -1,5 +1,5 @@
 {% set name = "compas_libigl" %}
-{% set version = "0.3.1" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,14 +8,14 @@ package:
 source:
   - url: https://github.com/compas-dev/{{ name }}/archive/v{{ version }}.tar.gz
     fn: {{ name }}-{{ version }}.tar.gz
-    sha256: 8d969497fd8eeec3323e61c9482d89169d21a193f53a7283b6b78aa9b24b8bb9
+    sha256: 6e87f7e2530459f813b6efb617ebd4ca031f6d000f4c5330ca1a9871bcc9641d
   - url: https://github.com/libigl/libigl/archive/v2.2.0.tar.gz
     fn: libigl-2.2.0.tar.gz
     folder: ext/libigl
     sha256: b336e548d718536956e2d6958a0624bc76d50be99039454072ecdc5cf1b2ede5
 
 build:
-  number: 2
+  number: 0
   skip: true  # [py>310]
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
