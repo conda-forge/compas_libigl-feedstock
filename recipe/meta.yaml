@@ -39,7 +39,7 @@ requirements:
 
 test:
   imports:
-    - compas_cgal
+    - compas_libigl
   requires:
     - pytest
 
