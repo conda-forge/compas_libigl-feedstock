@@ -1,5 +1,5 @@
 {% set name = "compas_libigl" %}
-{% set version = "0.7.2" %}
+{% set version = "0.7.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/compas-dev/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: bb353ca776a16d60342e0160d03744bcadde5da10e02053add1ace9611cf7a5d
+  sha256: 4e5977545851892fa33618bb1be4b23bf47ceccb4f192168c6daa83288575f73
 
 build:
   number: 0
