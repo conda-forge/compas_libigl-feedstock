@@ -1,5 +1,5 @@
 {% set name = "compas_libigl" %}
-{% set version = "0.7.5" %}
+{% set version = "0.7.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/compas-dev/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: ba422d2b20e9d3c9b9467d5c52f6fa61b147888ecde9e955b0035c6bd0dfae92
+  sha256: 88d9620c8985c01eddbf2b0f7f004c584396faafacd1b95c27606212636382ee
 
 build:
-  number: 1
+  number: 0
   script:
     - export CMAKE_BUILD_PARALLEL_LEVEL=${CPU_COUNT}  # [win]
     - {{ PYTHON }} -m pip install . -v
